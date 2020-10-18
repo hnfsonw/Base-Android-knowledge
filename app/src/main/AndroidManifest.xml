@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hnf.guet.moreknowleagemoremoney">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Android.Retrofit.RetrofitActivity"></activity>
+        <activity android:name=".Android.Fragment.FragmentActivity" />
+        <activity android:name=".Android.PermissionFrame.PermissonRequestActivity" /> <!-- <activity android:name=".Android.TCP.TcpActivity"></activity> -->
+        <service
+            android:name=".Android.TCP.TcpService"
+            android:exported="false" /> <!-- <activity android:name=".Android.MVP.MVPActivity" /> &lt;!&ndash; <activity android:name=".Android.RecyclerViewUse.RecyclerViewActivity"></activity> &ndash;&gt; -->
+        <activity android:name=".Android.CustomView.CustomAttrsActivity" /> <!-- <activity android:name=".Android.CustomView.Main2Activity"></activity> -->
+        <!-- <activity android:name=".Android.MutilProcess.MessagerUse.MessagerActivity"></activity> -->
+        <service
+            android:name=".Android.MutilProcess.MessagerUse.MessagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="com.hnf.testprocess" />
+        <service
+            android:name=".Android.MutilProcess.ProcessService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Android.MutilProcess.ProcessActivity"
+            android:process=":remote" />
+
+        <service
+            android:name=".Android.Service.MyService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".Android.Service.ServiceActivity" />
+        <activity android:name=".Android.Activity.SecondActivity" />
+        <activity android:name=".Android.Activity.FirstActivity" />
+        <activity android:name=".Android.ListView.ListViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Android.CustomView.AnimationActivity" />
+        <activity android:name=".Android.CustomView.LayerListActivity" />
+        <activity android:name=".Android.CustomView.LineActivity" />
+        <activity android:name=".Android.CustomView.OvalActivity" />
+        <activity android:name=".Android.CustomView.RectangleActivity" />
+        <activity android:name=".Android.CustomView.RingActivity" />
+        <activity android:name=".Android.CustomView.SelectorActivity" />
+        <activity android:name=".Android.CustomView.ShapeActivity" />
+    </application>
+
+</manifest>

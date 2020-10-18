@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    declare-styleable是属性的集合-->
+    <!--    attr是属性的声明-->
+    <!--    在styles.xml中使用该属性-->
+    <declare-styleable name="customStyle">
+        <attr name="attr_one" format="string"/>
+
+    </declare-styleable>
+</resources>

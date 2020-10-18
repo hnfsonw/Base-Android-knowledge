@@ -1,0 +1,25 @@
+自定义view
+
+view的结构：无论是measure、layout还是draw的过程，永远都是从View树的根节点开始测量或者计算的。
+
+android的坐标系：以左上角为原点，横向为X轴，竖向为Y轴
+
+view的位置：top、left、right、bottom指的都是子view的边界到父view边界的距离。view的代码获取方式： view.getLeft、view.getTop
+
+与MotionEvent中 get()和getRaw()的区别:
+//get() ：触摸点相对于其所在组件坐标系的坐标
+ event.getX();
+ event.getY();
+
+//getRaw() ：触摸点相对于屏幕默认坐标系的坐标
+ event.getRawX();
+ event.getRawY();
+
+自定义view的角度类：angle,弧度类：radian
+
+颜色的定义：ARGB
+
+getWidth() / getHeight()：获得View最终的宽 / 高
+getMeasuredWidth() / getMeasuredHeight()：获得 View测量的宽 / 高
+
+styleable、attr、style、theme

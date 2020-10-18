@@ -1,0 +1,2 @@
+include ':app', ':aidlservice', ':aidlclient'
+rootProject.name='MoreKnowleageMoreMoney'
